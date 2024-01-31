@@ -50,8 +50,11 @@ For this reason, it seems reasonable to add an additional step of self-checking 
 In this project a combination of the instructor and pydantic library were used to implement a step of fact verification with the help of the pydantic field_validatior.
 
 
-## Variable Structured Output
+## Dynamically Structured Output
 
 is an experiment on how it may be possible to let the LLM create **dynamically structured output under fixed boundary conditions** - explicitely spoken: letting the LLM create a schema dynamically based on inner knowledge and the pydantic BaseModel.
 
->The not entirely explicite solution used here leverages a combination of the pydantic create_model() factory function, the pydantic model_validator and the instructor library. 
+>The not entirely explicite solution used in this project leverages a combination of:
+>- the pydantic `create_model()` factory function, 
+>- the pydantic `model_validator` and 
+>- the instructor library.
