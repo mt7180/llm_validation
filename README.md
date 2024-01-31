@@ -4,10 +4,15 @@ Course Link: https://www.wandb.courses/courses/steering-language-models
 
 >successfully compleded
 https://www.credential.net/711a219e-7744-4e8e-b1f1-e6565318016c#gs.4acuiw
+
+Experiments:
+- [Multiple Choice Questions](#ai-powered-multiple-choice-questions-and-general-thoughts-on-structured-llm-output)
+- [Dynamically Structured LLM Output (under fixed constraints)](#dynamically-structured-output)
+
 ## AI-powered Multiple-Choice Questions and General Thoughts on Structured LLM Output 
 - [General Thoughts](#general-thoughts)
-- [Multiple-Choice Questions based on General LLM Knowledge](./marvin_quizz.ipynb)
-- [Multiple-Choice Questions based on RAG Knowledge](#rag-based-knowlege-base)
+- [Multiple-Choice Questions based on General LLM Knowledge](./multiple_choice.py)
+- [Multiple-Choice Questions based on RAG Knowledge](https://github.com/mt7180/quaigle/blob/df3a1039f6891e5a6688dae13ab3eb653ec38448/backend/fastapi_app.py#L331)
 
 ### General Thoughts
 A closer examination of the behavior of Large Language Models (LLMs) reveals the following key **pain points** for the development of reliable and robust AI applications:
@@ -52,7 +57,7 @@ In this project a combination of the instructor and pydantic library were used t
 
 ## Dynamically Structured Output
 
-is an experiment on how it may be possible to let the LLM create **dynamically structured output under fixed boundary conditions** - explicitely spoken: letting the LLM create a schema dynamically based on inner knowledge and the pydantic BaseModel.
+is an experiment on how it may be possible to let the LLM create **dynamically structured output under fixed constraints** - explicitely spoken: letting the LLM create a schema dynamically based on inner knowledge and the pydantic BaseModel.
 
 >The not entirely explicite solution used in this project leverages a combination of:
 >- the pydantic `create_model()` factory function, 
