@@ -2,3 +2,4 @@ instructor
 wandb
 pandas
 python-dotenv
+pre-commit
